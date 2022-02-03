@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Video from '../../img/SouthBeach.mp4'
 import '../styles/home.css'
 const Home = () => {
