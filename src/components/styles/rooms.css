@@ -9,12 +9,17 @@ body {
   background-blend-mode: darken;
   background-size: cover;
 }
+
+/* .carousel{
+  
+} */
 .contenedor {
   position: relative;
   top: 90px;
   margin: 0px 45px;
   padding: 40px;
 }
+
 
 .caja {
   margin: 40px 5px;
@@ -28,15 +33,16 @@ body {
 }
 
 .elemento {
+  position: relative;
   /* border: 1px solid red; */
   border-radius: 3px;
   margin: 15px;
-  min-width: 300px;
+  min-width: 400px;
   flex: 2;
   /* display: flex;
   flex-direction: column; */
 }
-.elemento:first-child {
+.elemento:last-child {
   flex-grow: 3;
 
 }
@@ -58,6 +64,7 @@ body {
 .carddescription {
   font-size: 1.1em;
   margin: 20px;
+  margin-bottom: 70px;
   max-width: 550px;
 }
 .caja .elemento .booknowPosition a {
@@ -68,8 +75,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
+  border: none;
 }
-
+.caja .elemento .booknowPosition{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
 .caja .elemento .booknowPosition a:hover {
   letter-spacing: 6px;
 }
@@ -91,5 +103,13 @@ body {
   .caja {
     margin: 20px 0px;
     padding: 5px;
+  }
+  .modalImg{
+    max-width: 70vh;
+  }
+}
+@media (max-width: 550px){
+  .elemento{
+    min-width: 250px;
   }
 }

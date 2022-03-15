@@ -4,6 +4,7 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Rooms from "./components/pages/Rooms";
 import Contact from "./components/pages/Contact";
+
 function App() {
   return (
     <Router>
