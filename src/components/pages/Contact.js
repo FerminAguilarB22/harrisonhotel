@@ -49,6 +49,14 @@ const Contact = () => {
                             <span>Email</span>
                         </div>
                         <div className="inputBox">
+                            <input type="number" required />
+                            <span>Persons</span>
+                        </div>
+                        <div className="inputBox date">
+                            <input type="date" required />
+                            <span>Date</span>
+                        </div>
+                        <div className="inputBox">
                             <textarea required />
                             <span>Type your Message</span>
                         </div>

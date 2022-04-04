@@ -1,6 +1,7 @@
 import React from 'react';
 import Video from '../../img/SouthBeach.mp4'
 import '../styles/home.css'
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const Home = () => {
                 <h2>Welcome to Miami</h2>
                 <h3>Enjoy your stay</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, amet minima explicabo saepe fugit at ut tempora blanditiis voluptatibus eum!</p>
-                <a href='https://www.hotelscombined.com/hotels/The-Harrison-Hotel-Miami-Beach,MiamiBeach,UnitedStates-c30651-h272276-details'>Book now</a>
+                <Link to='/contact'>Book now</Link>
             </div>
         </section>
         

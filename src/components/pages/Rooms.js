@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/rooms.css";
-import Room from "../../img/arbisoftimages-272276-DSC_0340-image.jpg";
 import { Carousel } from "react-carousel-minimal";
-
+import { Link } from "react-router-dom";
+import Carousel1 from "./Carousel1";
 const Rooms = () => {
-  const data = [
+  const data1 = [
     {
       image:
         "https://content.r9cdn.net/rimg/himg/77/59/0f/sembo-118314534-80256c01_z.jpg_resizeMode=FitInside_formatSettings=jpeg(quality-90)-556538.jpg?width=113&height=82&xhint=540&yhint=333&crop=true"
@@ -22,15 +22,14 @@ const Rooms = () => {
         "https://content.r9cdn.net/rimg/himg/77/59/0f/sembo-118314534-7ad26346_z.jpg_resizeMode=FitInside_formatSettings=jpeg(quality-90)-431890.jpg?width=113&height=82&xhint=540&yhint=333&crop=true"
     }
   ];
+ 
 
-  const captionStyle = {
-    fontSize: "2em",
-    fontWeight: "bold",
-  };
+
   const slideNumberStyle = {
     fontSize: "20px",
     fontWeight: "bold",
   };
+
 
   return (
     <>
@@ -44,21 +43,18 @@ const Rooms = () => {
               nesciunt ipsum laboriosam inventore odio facere.
             </p>
             <div className="booknowPosition">
-              <a href="https://www.hotelscombined.com/hotels/The-Harrison-Hotel-Miami-Beach,MiamiBeach,UnitedStates-c30651-h272276-details">
-                Book now
-              </a>
+            <Link to='/contact'>Book now</Link>
             </div>
           </div>
           <div className="elemento">
           <div className="App">
         <div style={{ textAlign: "center" }}>
-          
           <div
-           
+          
           >
             <Carousel
             className='carousel'
-              data={data}
+              data={data1}
               time={5000} 
               radius="10px"
               slideNumber={true}
@@ -66,56 +62,14 @@ const Rooms = () => {
               automatic={true}
               dots={true}
               pauseIconSize="40px"
-              // slideBackgroundColor="darkgrey"
               slideImageFit="cover"
               thumbnails={true}
               thumbnailWidth="100px"
-              // style={{
-              //   textAlign: "center",
-              //   maxWidth: "850px",
-              //   maxHeight: "500px",
-              //   margin: "40px auto",
-              // }}
+      
             />
           </div>
         </div>
       </div>
-          </div>
-        </div>
-        {/* Triple Room */}
-        <div className="caja">
-          <div className="elemento">
-            <h3 className="cardTitle">Triple Room</h3>
-            <p className="carddescription">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-              nesciunt ipsum laboriosam inventore odio facere.
-            </p>
-            <div className="booknowPosition">
-              <a href="https://www.hotelscombined.com/hotels/The-Harrison-Hotel-Miami-Beach,MiamiBeach,UnitedStates-c30651-h272276-details">
-                Book now
-              </a>
-            </div>
-          </div>
-          <div className="elemento">
-            <img src={Room} className="img" />
-          </div>
-        </div>
-        {/* Room */}
-        <div className="caja">
-          <div className="elemento">
-            <h3 className="cardTitle">Triple Room</h3>
-            <p className="carddescription">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-              nesciunt ipsum laboriosam inventore odio facere.
-            </p>
-            <div className="booknowPosition">
-              <a href="https://www.hotelscombined.com/hotels/The-Harrison-Hotel-Miami-Beach,MiamiBeach,UnitedStates-c30651-h272276-details">
-                Book now
-              </a>
-            </div>
-          </div>
-          <div className="elemento">
-            <img src={Room} className="img" />
           </div>
         </div>
       </section>

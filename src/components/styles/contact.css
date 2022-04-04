@@ -88,6 +88,7 @@
   width: 100%;
   margin-top: 10px;
 }
+
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
@@ -109,6 +110,21 @@
   transition: 0.5s;
   color: #666;
 }
+.contactForm .date{
+  margin-top: 20px;
+}
+.contactForm .date span {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
