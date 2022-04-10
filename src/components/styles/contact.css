@@ -144,6 +144,13 @@
   border-radius: 5px;
   
 }
+.select{
+  display: flex;
+  flex-direction: column;
+}
+.select label{
+  border-bottom: 2px solid #333;
+}
 
 @media (max-width: 991px) {
   .contact {

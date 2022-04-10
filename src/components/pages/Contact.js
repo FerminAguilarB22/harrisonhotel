@@ -52,6 +52,16 @@ const Contact = () => {
                             <input type="number" required />
                             <span>Persons</span>
                         </div>
+                        <div className="inputBox select">
+                            <label>Room your looking for </label>
+                            <select name="Room" id="room" className='my-2 py-1'>
+                                <option value="">Select room</option>
+                                <option value="Doble Room">Doble Room</option>
+                                <option value="Triple Room">Triple Room</option>
+                                <option value="King Room">King Room</option>
+                            </select>
+
+                        </div>
                         <div className="inputBox date">
                             <input type="date" required />
                             <span>Date</span>
@@ -62,7 +72,6 @@ const Contact = () => {
                         </div>
                         <div className="inputBox">
                             <input type="submit" value="Send" required />
-                
                         </div>
                     </form>
                 </div>
