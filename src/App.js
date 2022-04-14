@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Rooms from "./components/pages/Rooms";
 import Contact from "./components/pages/Contact";
-
+import Galery from "./components/pages/Galery";
 function App() {
   return (
     <Router>
@@ -14,6 +14,7 @@ function App() {
         <Route exact path="/" element={<Home></Home>}></Route>
         <Route exact path="/rooms" element={<Rooms></Rooms>}></Route>
         <Route exact path="/contact" element={<Contact></Contact>}></Route>
+        <Route exact path="/gallery" element={<Galery></Galery>}></Route>
       </Routes>
     </Router>
   );

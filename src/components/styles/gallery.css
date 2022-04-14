@@ -1,0 +1,43 @@
+.galeria{
+    padding: 150px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ .box{
+     margin: 10px 0px;
+ }
+.image{
+border-radius: 15px;
+width: 96%;
+cursor: pointer;
+transition: all 0.2s;
+}
+ 
+.image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 550px) {
+    .galeria{
+        padding: 60px 10px;
+    }
+    .image{
+        width: 100%;
+        }
+        .image:hover{
+            transform: scale(1);
+        }
+  }
+@media (min-width: 551px) and (max-width: 990px) {
+    .galeria{
+        padding: 100px 20px;
+    }
+    .image{
+        width: 97%;
+        }
+        .image:hover{
+            transform: scale(1.2);
+        }
+  }
+  

@@ -25,6 +25,8 @@ body {
   margin: 40px 5px;
   padding: 5px 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   background: #fff;
 }
@@ -65,7 +67,7 @@ body {
   font-size: 1.1em;
   margin: 20px;
   margin-bottom: 70px;
-  max-width: 550px;
+ width: 35%;
 }
 .caja .elemento .booknowPosition a {
   background: rgba(255, 123, 159, 0.74);
@@ -95,6 +97,10 @@ body {
   /* border: 1px solid red; */
   
 }
+.cajadescription{
+  display: flex;
+  flex-direction:row;
+}
 @media (max-width: 900px) {
   .contenedor {
     margin: 0px 7px;
@@ -112,4 +118,14 @@ body {
   .elemento{
     min-width: 250px;
   }
+  .cajadescription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.carddescription {
+  font-size: 1.1em;
+  margin: 0px;
+ width: 100%;
+}
 }

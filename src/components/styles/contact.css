@@ -9,12 +9,12 @@
 .contact {
   position: relative;
   min-height: 100vh;
-  padding: 50px 100px;
+  padding: 100px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(4, 2, 14, 0.65)url(../../img/miamiView.jpg);
+  background: rgba(4, 2, 14, 0.65) url(../../img/miamiView.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
