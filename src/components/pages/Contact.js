@@ -28,7 +28,6 @@ const Contact = () => {
         return false;
       }
     };
-  
     const campoRequerido = (input) => {
       if (input.trim() === "") {
         return false;
@@ -97,14 +96,14 @@ const Contact = () => {
                         <div className="icon"><FontAwesomeIcon icon={faPhoneAlt}/></div>
                         <div className="text">
                             <h3>Phone</h3>
-                            <p>+1 305-722-3538</p>
+                            <p>+1 (305) 397-8543</p>
                         </div>
                     </div>
                     <div className="box">
                         <div className="icon"><FontAwesomeIcon icon={faEnvelope}/></div>
                         <div className="text">
                             <h3>Email</h3>
-                            <p>harrisonhotel@gmail.com</p>
+                            <p>Theharrisonhotelmiami@gmail.com</p>
                         </div>
                     </div>
                 </div>
